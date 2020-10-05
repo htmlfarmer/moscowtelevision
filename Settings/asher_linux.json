@@ -44,7 +44,7 @@
         "id": "pulse_output_capture",
         "mixers": 255,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Desktop Audio",
         "prev_ver": 419430406,
         "private_settings": {},
@@ -59,8 +59,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Scene",
-    "current_scene": "Scene",
+    "current_program_scene": "Youtube",
+    "current_scene": "Youtube",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -116,7 +116,13 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "Scene"
+            "name": "Youtube"
+        },
+        {
+            "name": "Facebook"
+        },
+        {
+            "name": "Talk"
         }
     ],
     "sources": [
@@ -139,10 +145,42 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "capture_window": "27262986\r\nDesktop\r\ndesktop_window"
+                "capture_window": "39846004\r\nThe Blaze live at Aiguille du Midi in Chamonix, France for Cercle - YouTube - Chromium\r\nchromium",
+                "cut_bot": 150,
+                "cut_left": 91,
+                "cut_right": 533,
+                "cut_top": 156
             },
             "sync": 0,
             "versioned_id": "xcomposite_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "pulse_output_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Audio Output Capture (PulseAudio)",
+            "prev_ver": 419430406,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "versioned_id": "pulse_output_capture",
             "volume": 1.0
         },
         {
@@ -169,7 +207,8 @@
                 "Exposure (Absolute)": 218,
                 "Exposure, Auto": 5557561106012987725,
                 "Power Line Frequency": 7234307546238118212,
-                "Saturation": 15,
+                "Saturation": 65,
+                "White Balance Temperature, Auto": true,
                 "device_id": "/dev/video0",
                 "framerate": -1,
                 "input": 0,
@@ -187,9 +226,11 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Audio Output Capture (PulseAudio)": [],
                 "libobs.hide_scene_item.Screen Capture (XSHM)": [],
                 "libobs.hide_scene_item.Video Capture Device (V4L2)": [],
                 "libobs.hide_scene_item.Window Capture (Xcomposite)": [],
+                "libobs.show_scene_item.Audio Output Capture (PulseAudio)": [],
                 "libobs.show_scene_item.Screen Capture (XSHM)": [],
                 "libobs.show_scene_item.Video Capture Device (V4L2)": [],
                 "libobs.show_scene_item.Window Capture (Xcomposite)": []
@@ -198,7 +239,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scene",
+            "name": "Youtube",
             "prev_ver": 419430406,
             "private_settings": {},
             "push-to-mute": false,
@@ -207,7 +248,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 18,
                 "items": [
                     {
                         "align": 5,
@@ -226,14 +267,43 @@
                         "locked": false,
                         "name": "Screen Capture (XSHM)",
                         "pos": {
-                            "x": 44.0,
-                            "y": 49.0
+                            "x": 40.0,
+                            "y": 78.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.82604163885116577,
-                            "y": 0.82592594623565674
+                            "x": 0.83437502384185791,
+                            "y": 0.8342592716217041
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 14,
+                        "locked": false,
+                        "name": "Audio Output Capture (PulseAudio)",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -255,8 +325,8 @@
                         "locked": false,
                         "name": "Video Capture Device (V4L2)",
                         "pos": {
-                            "x": 55.0,
-                            "y": 700.0
+                            "x": 54.0,
+                            "y": 672.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -280,18 +350,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 5,
+                        "id": 18,
                         "locked": false,
                         "name": "Window Capture (Xcomposite)",
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 802.0,
+                            "y": 535.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.76705652475357056,
+                            "y": 0.76660341024398804
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -325,6 +395,64 @@
             },
             "sync": 0,
             "versioned_id": "xshm_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Facebook",
+            "prev_ver": 419430406,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 0,
+                "items": []
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Talk",
+            "prev_ver": 419430406,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 0,
+                "items": []
+            },
+            "sync": 0,
+            "versioned_id": "scene",
             "volume": 1.0
         }
     ],
